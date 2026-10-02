@@ -11,7 +11,7 @@ function Leaderboard() {
 
     useEffect(() => {
         axios
-            .get("http://127.0.0.1:5000/player-leaderboard")
+            .get("https://sportx-lbxd.onrender.com/player-leaderboard")
             .then((response) => {
                 setPlayers(response.data);
                 setLoading(false);

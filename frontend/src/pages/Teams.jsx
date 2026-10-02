@@ -18,7 +18,7 @@ function Teams() {
   const fetchTeams = async () => {
     try {
       const response = await axios.get(
-        "http://127.0.0.1:5000/teams"
+        "https://sportx-lbxd.onrender.com/teams"
       );
 
       setTeams(response.data);
@@ -31,7 +31,7 @@ function Teams() {
   const fetchTournaments = async () => {
     try {
       const response = await axios.get(
-        "http://127.0.0.1:5000/tournaments"
+        "https://sportx-lbxd.onrender.com/tournaments"
       );
 
       setTournaments(response.data);
@@ -63,7 +63,7 @@ function Teams() {
 
     try {
       await axios.post(
-        "http://127.0.0.1:5000/teams",
+        "https://sportx-lbxd.onrender.com/teams",
         {
           name: name,
           tournament_id: tournamentId,

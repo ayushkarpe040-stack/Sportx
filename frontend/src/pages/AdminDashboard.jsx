@@ -47,7 +47,7 @@ function AdminDashboard() {
 
     // Get dashboard counts
     axios
-      .get("http://127.0.0.1:5000/dashboard-counts")
+      .get("https://sportx-lbxd.onrender.com/dashboard-counts")
       .then((response) => {
         setCounts(response.data);
       })
@@ -61,7 +61,7 @@ function AdminDashboard() {
 
     // Get matches
     axios
-      .get("http://127.0.0.1:5000/matches")
+      .get("https://sportx-lbxd.onrender.com/matches")
       .then((response) => {
         setMatches(response.data);
       })
@@ -75,7 +75,7 @@ function AdminDashboard() {
 
     // Get teams
     axios
-      .get("http://127.0.0.1:5000/teams")
+      .get("https://sportx-lbxd.onrender.com/teams")
       .then((response) => {
         setTeams(response.data);
       })
@@ -90,7 +90,7 @@ function AdminDashboard() {
     // Get player statistics
     axios
       .get(
-        "http://127.0.0.1:5000/player-leaderboard"
+        "https://sportx-lbxd.onrender.com/player-leaderboard"
       )
       .then((response) => {
         setPlayerStats(response.data);

@@ -16,7 +16,7 @@ const isAdmin = userRole === "admin";
         try {
 
             const response = await axios.get(
-                "http://127.0.0.1:5000/notifications"
+                "https://sportx-lbxd.onrender.com/notifications"
             );
 
             setNotifications(response.data);
@@ -40,7 +40,7 @@ const isAdmin = userRole === "admin";
         try {
 
             await axios.put(
-                `http://127.0.0.1:5000/notifications/${id}/read`
+                `https://sportx-lbxd.onrender.com/notifications/${id}/read`
             );
 
             fetchNotifications();

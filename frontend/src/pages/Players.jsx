@@ -19,7 +19,7 @@ function Players() {
   const fetchTeams = async () => {
     try {
       const response = await axios.get(
-        "http://127.0.0.1:5000/teams"
+        "https://sportx-lbxd.onrender.com/teams"
       );
 
       setTeams(response.data);
@@ -31,7 +31,7 @@ function Players() {
   const fetchPlayers = async () => {
     try {
       const response = await axios.get(
-        "http://127.0.0.1:5000/players"
+        "https://sportx-lbxd.onrender.com/players"
       );
 
       setPlayers(response.data);
@@ -64,7 +64,7 @@ function Players() {
     try {
       if (editPlayerId) {
         await axios.put(
-          `http://127.0.0.1:5000/players/${editPlayerId}`,
+          `https://sportx-lbxd.onrender.com/players/${editPlayerId}`,
           {
             name,
             team_id: teamId,
@@ -77,7 +77,7 @@ function Players() {
         alert("Player updated successfully!");
       } else {
         await axios.post(
-          "http://127.0.0.1:5000/players",
+          "https://sportx-lbxd.onrender.com/players",
           {
             name,
             team_id: teamId,
@@ -120,7 +120,7 @@ function Players() {
 
     try {
       await axios.delete(
-        `http://127.0.0.1:5000/players/${id}`
+        `https://sportx-lbxd.onrender.com/players/${id}`
       );
 
       alert("Player deleted successfully!");

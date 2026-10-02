@@ -26,7 +26,7 @@ const [refereeId, setRefereeId] = useState("");
   const fetchMatches = async () => {
     try {
       const response = await axios.get(
-        "http://127.0.0.1:5000/matches"
+        "https://sportx-lbxd.onrender.com/matches"
       );
 
       setMatches(response.data);
@@ -37,7 +37,7 @@ const [refereeId, setRefereeId] = useState("");
   const fetchVenues = async () => {
   try {
     const response = await axios.get(
-      "http://127.0.0.1:5000/venues"
+      "https://sportx-lbxd.onrender.com/venues"
     );
 
     setVenues(response.data);
@@ -49,7 +49,7 @@ const [refereeId, setRefereeId] = useState("");
 const fetchReferees = async () => {
   try {
     const response = await axios.get(
-      "http://127.0.0.1:5000/referees"
+      "https://sportx-lbxd.onrender.com/referees"
     );
 
     setReferees(response.data);
@@ -61,7 +61,7 @@ const fetchReferees = async () => {
   const fetchTournaments = async () => {
     try {
       const response = await axios.get(
-        "http://127.0.0.1:5000/tournaments"
+        "https://sportx-lbxd.onrender.com/tournaments"
       );
 
       setTournaments(response.data);
@@ -73,7 +73,7 @@ const fetchReferees = async () => {
   const fetchTeams = async () => {
     try {
       const response = await axios.get(
-        "http://127.0.0.1:5000/teams"
+        "https://sportx-lbxd.onrender.com/teams"
       );
 
       setTeams(response.data);
@@ -122,7 +122,7 @@ const resetForm = () => {
 
     try {
      await axios.post(
-  "http://127.0.0.1:5000/matches",
+  "https://sportx-lbxd.onrender.com/matches",
   {
     tournament_id: tournamentId,
     team1_id: team1Id,

@@ -13,7 +13,7 @@ const [loading, setLoading] = useState(true);
   const fetchTournamentDetails = async () => {
     try {
       const response = await axios.get(
-        `http://127.0.0.1:5000/tournaments/${id}`
+        `https://sportx-lbxd.onrender.com/tournaments/${id}`
       );
 
       setTournament(response.data);
@@ -27,7 +27,7 @@ const [loading, setLoading] = useState(true);
 const fetchTournamentTeams = async () => {
   try {
     const response = await axios.get(
-      `http://127.0.0.1:5000/tournaments/${id}/teams`
+      `https://sportx-lbxd.onrender.com/tournaments/${id}/teams`
     );
 
     setTeams(response.data);

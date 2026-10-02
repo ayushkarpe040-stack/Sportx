@@ -22,7 +22,7 @@ function UserDashboard() {
         try {
 
             const tournamentResponse = await axios.get(
-                "http://127.0.0.1:5000/tournaments"
+                "https://sportx-lbxd.onrender.com/tournaments"
             );
 
             setTournaments(tournamentResponse.data);
@@ -36,7 +36,7 @@ function UserDashboard() {
         try {
 
             const matchResponse = await axios.get(
-                "http://127.0.0.1:5000/matches"
+                "https://sportx-lbxd.onrender.com/matches"
             );
 
             setMatches(matchResponse.data);
@@ -50,7 +50,7 @@ function UserDashboard() {
         try {
 
             const notificationResponse = await axios.get(
-                "http://127.0.0.1:5000/notifications"
+                "https://sportx-lbxd.onrender.com/notifications"
             );
 
             setNotifications(notificationResponse.data);

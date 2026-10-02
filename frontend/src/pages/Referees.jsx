@@ -24,7 +24,7 @@ function Referees() {
     const loadReferees = () => {
 
         axios
-            .get("http://127.0.0.1:5000/referees")
+            .get("https://sportx-lbxd.onrender.com/referees")
             .then((response) => {
                 setReferees(response.data);
                 setLoading(false);
@@ -67,7 +67,7 @@ function Referees() {
         setSaving(true);
 
         axios
-            .post("http://127.0.0.1:5000/referees", {
+            .post("https://sportx-lbxd.onrender.com/referees", {
                 name: formData.name,
                 phone: formData.phone,
                 email: formData.email,
