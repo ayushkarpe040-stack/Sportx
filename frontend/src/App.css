@@ -1108,3 +1108,134 @@
     grid-template-columns: 1fr;
   }
 }
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .app-layout {
+    display: block;
+    width: 100%;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 15px;
+  }
+
+  .sidebar-logo {
+    margin-bottom: 10px;
+  }
+
+  .sidebar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .sidebar-nav a {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  /* Main content */
+  .main-content {
+    width: 100%;
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  /* Dashboard */
+  .dashboard-page {
+    padding: 10px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 24px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .stat-card {
+    width: 100%;
+  }
+
+  /* Tables */
+  .table-wrapper,
+  .statistics-table-wrapper,
+  .venues-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 650px;
+  }
+
+  /* Page headers */
+  .page-header,
+  .statistics-header,
+  .venues-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .page-header h1,
+  .statistics-header h1,
+  .venues-header h1 {
+    font-size: 24px;
+  }
+
+  /* Forms */
+  .form-grid,
+  .venue-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-card,
+  .venue-form-card {
+    width: 100%;
+  }
+
+  /* Buttons */
+  button {
+    max-width: 100%;
+  }
+
+  /* Cards */
+  .content-card,
+  .statistics-card,
+  .venues-card {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* Login */
+  .login-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .login-box {
+    width: 100%;
+    max-width: 400px;
+  }
+}
